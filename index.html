@@ -2,14 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Job Finder</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <! com o href acima, consegui importar o bootstrap para o projeto e fazer funcionar o menu de navegação, principalmente colocando para a direita, com o ml-auto, os buttons "Ver Vagas" e "Abrir Vagas">
+    <link rel="stylesheet" href="public/css/styles.css ">   
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Job Finder</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav"> 
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ver vagas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="add.html">Abrir vaga</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+    <div id="top-container" class="container-fluid">
+        <h1 id="main-title" class="text-center">Encontre o emprego dos seus sonhos </h1>
+        <p id="main-subtitle" class="text-center">Somos o site com mais vagas de tecnologia no mercado</p>
+        <form id="search-form" class="form-inline" action="">
+            <div class="form-group col-md-10">
+                <input type="text" class="form-control" id="job" name="job"    placeholder="Digite a vaga que está buscando">
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </div>
+            <main>
+                <! na tag main, colocamos todo o conteúdo principal da página >
+                <div id="jobs-container" class="container">
+                    <div class="row">
+                        <! criando uma linha>
+                        <div class="col-md-12">
+                            <!vai conter esta lista em 12 colunas >  
+                            <h2 id="job-list-title">Veja as nossas vags em destaque</h2>
+                            <ul id="job-list" class="list-group">
+                                <li class="list-group-item new-job">
+                                    <img src="public/img/company.svg" alt="company">
+                                    <p>Empresa</p>
+                                    <h2>Título da vaga</h2>
+                                    <p>R$2000,00</p>
+                                    <span class="new-job-label">Nova</span>
+                                    <a class="btn btn-primary" href="">Ver vaga</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="public/img/company.svg" alt="company">
+                                    <p>Empresa</p>
+                                    <h2>Título da vaga</h2>
+                                    <p>R$2000,00</p>
+                             
+                                    <a class="btn btn-primary" href="">Ver vaga</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <img src="public/img/company.svg" alt="company">
+                                    <p>Empresa</p>
+                                    <h2>Título da vaga</h2>
+                                    <p>R$2000,00</p>
+                            
+                                    <a class="btn btn-primary" href="">Ver vaga</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+
+        </form>
+     
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
