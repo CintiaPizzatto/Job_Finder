@@ -49,13 +49,85 @@
 
 #main-title {
   padding: 30px 0;
-  font-size: 3rem;
+  font-size: 3rem; /* 3 x a font do elemento root */
 }
 
 #main-subtitle {
   font-size: 1rem;
-  padding-bottom: 80px;
+  padding-bottom: 80px; /*para o subtitle descolar do formulario abaixo*/
 }
 
   
   /* form */
+#search-form{
+  padding: 30px 100px; /* superior e inferior, sem pixels nas laterais */
+}
+
+#search-form .col-md-10, #search-form .col-md-2 {
+  padding: 0; /* vamos tirar os paddings do form porque queremos que fiquem grudados*/
+}
+
+#search-form input, #search-form button {
+  width: 100%; /* largura de 100% dos seus pais */
+  border-radius: 0;
+  height: 50px;
+  font-size: 18px;
+}
+
+#search-form button {
+  color: #FFF;
+  background-color: #F03E3E;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+#jobs-container {
+  padding: 0px 100px; /* 0px para top/bottom e 100px para left/right */
+  padding-bottom: 50px;
+} 
+
+#job-list .list-group-item {
+  margin-bottom: 8px; /* para dar um espaçamento entre o job-list e o footer, um espaçamento de 8 px depois de cada item (cada job) */
+  border: 1px solid #ccc;
+  padding: 15px 80px;
+  color: #212529;
+  height: 120px;
+}
+
+#job-list .list-group-item p{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#job-list .list-group-item.new-job{
+  border: none;
+  background-color: #FFF7cc;
+  
+}
+
+#job-list-title {
+  margin-bottom: 35px;
+  
+}
+
+.list-group-item img {
+  width: 80px;
+  border: 1px solid #212529;
+  border-radius: 50%;
+  background-color: #fff; /* como é um .svg, o fundo é transparente, então vamos colocar um fundo branco */
+  position: absolute;/* para que o elemento fique em cima do outro. Vamos mexer no elemento e queremos que fique no centro */
+  left: -40px; /* para que o elemento fique no centro, vamos colocar  - (menos) a metade da largura do elemento (width=80px), que é 40px */
+  top: calc(50% - 40px); /* fazer um calculo de 50% da div menos 40px que é a metade da altura dela */
+}
+
+.list-group-item a {
+
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  height: 50px;
+  line-height: 35px; /* para centralizaro texto o botão */
+  background-color: #F03E3E;
+  border: 1px solid transparent;
+  border-radius: 0;
+} 
