@@ -1,62 +1,61 @@
 * {
-    box-sizing: border-box;
-    font-family: Helvetica, sans-serif
-  }
-  
-  /* nav */
-  .navbar  {
-    padding: 1rem;
-    border-bottom: 1px solid #CCC;
-  }
-  
-  .navbar .nav-item a {
-    color: #212529;
-  }
-  
-  .nav-item {
-    margin: 0 10px;
-  }
-  
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 10px 25px;
-    font-weight: bold;
-  }
-  
-  .navbar .nav-item .btn {
-    color: #FFF;
-    background-color: #F03E3E;
-    border: 1px solid transparent;
-    border-radius: 0;
-  }
-  
-  .nav-link.btn.btn-primary:hover, #search-form button:hover, .list-group-item a:hover, #form-box button:hover {
-    background-color: #FFF;
-    color: #F03E3E;
-    border-color: #F03E3E;
-  }
-  
-  /* banner */
-  #top-container {
-    padding: 110px;
-    background-color: #F7F9FC;
-    border-bottom: 4px solid #013068;
-    margin-bottom: 30px;
-    background-image: url("../img/banner2.jpg");
-    background-position: 0 100px;
-    background-size: cover;
-    color: #FFF;
-    width: 100%;
-    height: 300px;
-  }
-  
-  #main-title {
-    padding: 30px 0;
-    font-size: 3rem;
-  }
-  
-  #main-subtitle {
-    font-size: 1rem;
-    padding-bottom: 80px;
-  }
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif
+}
+
+/* nav */
+.navbar  {
+  padding: 1rem; 
+  border-bottom: 1px solid #CCC;
+}
+
+.navbar .nav-item a {
+  color: #212529;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 10px 25px;
+  font-weight: bold;
+}
+
+.navbar .nav-item .btn {
+  color: #FFF;
+  background-color: #F03E3E;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.nav-link.btn.btn-primary:hover, #search-form button:hover, .list-group-item a:hover, #form-box button:hover {
+  background-color: #FFF;
+  color: #F03E3E;
+  border-color: #F03E3E;
+}
+
+/* banner */
+#top-container {
+  padding: 110px;
+  background-color: #F7F9FC;
+  border-bottom: 4px solid #013068;
+  margin-bottom: 30px;
+  background-image: url("../img/banner2.jpg");
+  background-position: 0 100px;
+  background-size: cover;
+  color: #FFF;
+}
+
+#main-title {
+  padding: 30px 0;
+  font-size: 3rem;
+}
+
+#main-subtitle {
+  font-size: 1rem;
+  padding-bottom: 80px;
+}
+
   
   /* form */

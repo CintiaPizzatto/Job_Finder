@@ -9,7 +9,7 @@
     <link rel="stylesheet" 
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <! com o href acima, consegui importar o bootstrap para o projeto e fazer funcionar o menu de navegação, principalmente colocando para a direita, com o ml-auto, os buttons "Ver Vagas" e "Abrir Vagas">
+    /* com o href acima, consegui importar o bootstrap para o projeto e fazer funcionar o menu de navegação, principalmente colocando para a direita, com o ml-auto, os buttons "Ver Vagas" e "Abrir Vagas" */
     <link rel="stylesheet" href="public/css/styles.css ">   
 </head>
 <body>
@@ -42,52 +42,51 @@
             <div class="col-md-2">
                 <button type="submit" class="btn btn-primary">Buscar</button>
             </div>
-            <main>
-                <! na tag main, colocamos todo o conteúdo principal da página >
-                <div id="jobs-container" class="container">
-                    <div class="row">
-                        <! criando uma linha>
-                        <div class="col-md-12">
-                            <!vai conter esta lista em 12 colunas >  
-                            <h2 id="job-list-title">Veja as nossas vags em destaque</h2>
-                            <ul id="job-list" class="list-group">
-                                <li class="list-group-item new-job">
-                                    <img src="public/img/company.svg" alt="company">
-                                    <p>Empresa</p>
-                                    <h2>Título da vaga</h2>
-                                    <p>R$2000,00</p>
-                                    <span class="new-job-label">Nova</span>
-                                    <a class="btn btn-primary" href="">Ver vaga</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <img src="public/img/company.svg" alt="company">
-                                    <p>Empresa</p>
-                                    <h2>Título da vaga</h2>
-                                    <p>R$2000,00</p>
-                             
-                                    <a class="btn btn-primary" href="">Ver vaga</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <img src="public/img/company.svg" alt="company">
-                                    <p>Empresa</p>
-                                    <h2>Título da vaga</h2>
-                                    <p>R$2000,00</p>
-                            
-                                    <a class="btn btn-primary" href="">Ver vaga</a>
-                                </li>
-                            </ul>
-                        </div>
+        </form>
+    </div>
+        <main>
+            <div id="jobs-container" class="container">
+                <div class="row">
+                    <div class="col-md-12"> <!vai conter esta tabela em 12 colunas >
+                        <h2 id="job-list-title">Veja as nossas vags em destaque</h2>
+                        <ul id="job-list" class="list-group">
+                            <li class="list-group-item new-job">
+                                <img src="public/img/company.svg" alt="company">
+                                <p>Empresa</p>
+                                <h2>Título da vaga</h2>
+                                <p>R$2000,00</p>
+                                <span class="new-job-label">Nova</span>
+                                <a class="btn btn-primary" href="">Ver vaga</a>
+                            </li>
+                            <li class="list-group-item">
+                                <img src="public/img/company.svg" alt="company">
+                                <p>Empresa</p>
+                                <h2>Título da vaga</h2>
+                                <p>R$2000,00</p>
+                                <a class="btn btn-primary" href="">Ver vaga</a>
+                            </li>
+                            <li class="list-group-item">
+                                <img src="public/img/company.svg" alt="company">
+                                <p>Empresa</p>
+                                <h2>Título da vaga</h2>
+                                <p>R$2000,00</p>
+                                <a class="btn btn-primary" href="">Ver vaga</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </main>
+            </div>
+        </main>
 
 
         </form>
-     
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 </body>
 </html>
