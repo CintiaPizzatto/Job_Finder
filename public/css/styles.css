@@ -81,6 +81,8 @@
   border-radius: 0;
 }
 
+/* lista */
+
 #jobs-container {
   padding: 0px 100px; /* 0px para top/bottom e 100px para left/right */
   padding-bottom: 50px;
@@ -122,12 +124,30 @@
 
 .list-group-item a {
 
-  position: absolute;
+  position: absolute; /* para que o elemento fique em cima do outro. Vamos mexer no elemento e queremos que fique no centro */
   right: 20px;
   top: 35px;
   height: 50px;
-  line-height: 35px; /* para centralizaro texto o botão */
+  line-height: 35px; /* para centralizar o texto o botão */
   background-color: #F03E3E;
   border: 1px solid transparent;
   border-radius: 0;
+  color: #fff; /* cor da letra VER VAGA */
+  
 } 
+
+.new-job-label {
+  background-color: #ffd500;
+  color: #4d5154;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: absolute;
+  right: 250px;
+  top: 40px;
+  display: none; /* esta classe só estará visivel quando o elemento tiver a classe .new-job */
+}
+
+.new-job .new-job-label{
+  display: block; /* aqui foi trocado de display: none para display: block, para que quando o elemento tiver a classe .new-job, a classe .new-job-label também apareça */ 
+}
